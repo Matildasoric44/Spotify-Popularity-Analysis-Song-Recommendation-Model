@@ -22,7 +22,7 @@ We started off by importing module functions and all dependencies we need. We th
 `popularity`: The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are.\
 `release_date`: The date song was released\
 `speechiness`:Speechiness detects the presence of spoken words in a track.\
-`tempo`:The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.\
+`tempo`:The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
 ## Cleaning the Data
 After taking a closer look at the release_date column we noticed that some dates only had a year and some had year-month-day format. We split the column into year, month, and day and filled missing values with NaN to get an insight into how many of those valuse were missing and if there is anything else we could do with the data we had.
 We found that around 30% of the rows were missing day and month of the release. Since it was a such a high number we decided to not drop those rows but instead focus on other attributes that could play a significant role for our model.
