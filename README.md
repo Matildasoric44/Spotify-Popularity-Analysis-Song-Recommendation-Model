@@ -47,10 +47,10 @@ After running it we found that the highest score we could get was 0.8195 and it 
  `loudness`,
  `mode`,
  `speechiness`.
- ###Creating Linear Regression Model Based on Best Columns Using Trained Dataframe
+ ### Creating Linear Regression Model Based on Best Columns Using Trained Dataframe
  We defined lr as a LinearRegression object and split our X and y variables. We used the **balanced** dataframe for our model.After fitting the model and making predictions our model got a score of 0.82. The score is decent but we wanted to look at our predictions and the actual values to see how good our model actually is. Plotting these values will also help us notice any outliers or clusters in the data.
 Mean Absolute Error was 8.7 which means our predicions were missed by 8 points on average. This can mean 8 points too high or 8 points too low on our popularity scores prediction. Another observation was that our model was not not predicting any values above 80. We will look more into that in the next part.
-###Analysing Why the Model Will Not Predict Values Above 80 While Showing Actual Values up to 100
+### Analysing Why the Model Will Not Predict Values Above 80 While Showing Actual Values up to 100
 We wanted to find out why our model would not predict values above 80 so we made a Linear Regression Model on `popularity` values higher than 60 and fit the model. Mean Absolute Error was 4.4 and R^2 was 0.05. but the model still didn't predict any values higher than 80.
 # Findings & Suggestions 
 After looking at our data, cleaning, analysing and making models we found that newer songs tend to be more popular. A few features that help a song become more popular are: more energy and loudness, and less acousticness.
